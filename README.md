@@ -43,10 +43,6 @@ npm install
 npm run dev
 ```
 
-## 🏆 Hackathon Scope vs Live App
-*This repository represents our 4-Day Minimum Viable Product (MVP).*
-- **✅ Built:** High-fidelity UI flow, Interactive Fee Comparison engine, Freighter connection modal mock, Soroban split routing dashboard, pure native Ka-Ching audio/animation triggers.
-- **🟡 Mocked:** Actual Anchor fiat settlement, real KYC processing (currently bypasses with hardcoded testnet asset transfers).
 
 ## 🎶 The "Ka-Ching" Philosophy
 Our name is our brand. The Ka-Ching sound is mathematically synthesized via the Web Audio API without needing external MP3 dependencies. Every time it plays, it reinforces a moment of financial optimization for the user.
