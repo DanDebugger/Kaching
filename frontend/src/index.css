@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #00C853; /* GCash Green */
+  --primary-glow: rgba(0, 200, 83, 0.3);
+  --accent: #3b82f6; /* Blue */
+  --background: #111114; /* Stitch Deep Slate */
+  --foreground: #f8fafc; /* Slate 50 */
+  --surface: #1A1A1E; /* Stitch Charcoal Card */
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glass {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  @apply rounded-[24px] p-6 shadow-2xl relative overflow-hidden;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #34d399, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
